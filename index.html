@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Layers</title>
+
+
+
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+
+
+  <link rel="stylesheet" href="https://js.arcgis.com/3.23/esri/themes/calcite/dijit/calcite.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.23/esri/themes/calcite/esri/esri.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://js.arcgis.com/3.23/"></script>
+  <!--api de javascript de esri-->
+
+  <script src="js/js.js" charset="utf-8"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+
+
+
+
+
+
+
+</head>
+
+
+<body class="calcite">
+
+
+  <div id="mainCont">
+
+
+    <div id="tituloCont">
+      <div id="logo">
+
+      <img src="imagenes\angelsuarez.png" width="80" height="80" alt="logo gis ">
+  </div>
+
+<div id="titulo">
+    <h1 class="descripcion"> Población Mundial </h1>
+</div>
+
+    </div>
+    <div id="menuIzqCont">
+
+  <!--     <input id="inputQ" type="number"> -->
+<div id="izqletras">
+  <div id="textosSup"> <p> Valor de la población:</p>
+  <span id="txtRango">11810000</span>
+  </div>
+
+
+
+      <input id="rango" type="range" min="1" max="23620000">
+      <div id="textoRango">
+        <span>0</span>
+        <span>23620000</span>
+      </div>
+
+
+      <select id="selector">
+        <option value =">"> Mayor que  </option>
+        <option value ="<"> Menor que </option>
+        <option value = "="> Igual que </option>
+        <option value = ">="> Mayor o igual que </option>
+        <option value ="<="> Menor o igual que  </option>
+      </select>
+
+
+      <p id="loco2"> </p>
+
+
+            <button id="botonQ" type="button" class="btn btn-warning">Consulta</button>
+</div>
+    </div>
+
+
+    <div id="mapaCont"> </div>
+
+
+
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>
